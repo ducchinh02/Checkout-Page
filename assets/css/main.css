@@ -229,16 +229,7 @@ body {
   font-size: 2.4rem;
   font-weight: 600;
 }
-@media screen and (max-width: 576px) {
-  .shopping-cart .container .cart_header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 0;
-    background: var(--white);
-  }
-}
+
 .shopping-cart .container .cart_header .icon {
   display: flex;
   align-items: center;
@@ -412,16 +403,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 576px) {
-  .shopping-cart .check-out {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    background: var(--white);
-    padding: 1rem 0;
-  }
-}
+
 .shopping-cart .check-out .btn-check {
   padding: 1.6rem 7.2rem;
   color: var(--white);
