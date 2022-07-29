@@ -209,7 +209,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .shopping-cart {
-    height: 100vh;
+    height: 100%;
     overflow: scroll;
   }
   .shopping-cart::-webkit-scrollbar {
