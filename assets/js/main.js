@@ -240,23 +240,6 @@ const newProductsItem = document.querySelectorAll(
 
 newProductsItem.forEach((product, index) => {
 	product.addEventListener("click", () => {
-		const decrBtn = document.querySelectorAll(".cart_item .decr-quantity");
-		const incrBtn = document.querySelectorAll(".cart_item .incr-quantity");
-		console.log(decrBtn, incrBtn);
-		decrBtn.forEach((btn, index) => {
-			btn.addEventListener("click", () => {
-				inCart[index].quantity--;
-				render();
-			});
-		});
-
-		incrBtn.forEach((btn, index) => {
-			btn.addEventListener("click", () => {
-				inCart[index].quantity++;
-				render();
-			});
-		});
-
 		const result = inCart.find((item) => item.name === products[index].name);
 		if (result) {
 			result.quantity++;
