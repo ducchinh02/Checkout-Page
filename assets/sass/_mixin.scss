@@ -1,0 +1,51 @@
+@mixin text-base-bold {
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+@mixin text-base-normal {
+	font-size: 1.6rem;
+	font-weight: normal;
+}
+@mixin text-bold {
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+@mixin text-normal {
+	font-size: 1.7rem;
+	font-weight: normal;
+}
+@mixin text-sm-bold {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+@mixin text-sm-normal {
+	font-size: 1.4rem;
+	font-weight: normal;
+}
+@mixin text-lg-bold {
+	font-size: 2rem;
+	font-weight: 600;
+}
+@mixin text-header {
+	font-size: 2.4rem;
+	font-weight: 600;
+}
+@mixin radius {
+	border-radius: 1rem;
+}
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin trans_300 {
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+}

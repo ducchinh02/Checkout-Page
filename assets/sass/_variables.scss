@@ -1,0 +1,45 @@
+$primary: #3bb77e;
+$hover: #29a56c;
+$semi-black: #393939;
+$black: #000;
+$red: #ff0000;
+$gray: #f2f2f2;
+$white: #fff;
+
+::selection {
+	background-color: var(--primary);
+	color: var(--white);
+}
+html {
+	&::-webkit-scrollbar {
+		width: 1rem;
+		border-radius: 1rem;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: var(--gray);
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: transparentize($color: #000000, $amount: 0.9);
+		border-radius: 1rem;
+	}
+}
+body {
+	--primary: #{$primary};
+	--hover: #{$hover};
+	--semi-black: #{$semi-black};
+	--black: #{$black};
+	--red: #{$red};
+	--gray: #{$gray};
+	--white: #{$white};
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--gray);
+	padding: 3rem;
+	@media screen and (max-width: 576px) {
+		& {
+			padding: 0;
+		}
+	}
+}
